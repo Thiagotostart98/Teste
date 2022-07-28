@@ -1,0 +1,17 @@
+def porcentagem (cid, valor):
+    return round(((100*cid)/valor),2)
+
+sp = 67836.43
+rj = 36678.66
+mg = 29229.88
+es = 27165.48
+outros = 19849.53
+
+valor = sp + rj + mg + es + outros
+
+# Exibindo faturamentos
+print("Porcentagem do faturamento de SP:" + str(porcentagem(sp, valor)) + '%')
+print("Porcentagem do faturamento de RJ:" + str(porcentagem(rj, valor)) + '%')
+print("Porcentagem do faturamento de MG:" + str(porcentagem(mg, valor)) + '%')
+print("Porcentagem do faturamento de ES:" + str(porcentagem(es, valor)) + '%')
+print("Porcentagem de outros faturamentos:" + str(porcentagem(outros, valor)) + '%')
